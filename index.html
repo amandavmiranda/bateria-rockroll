@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bateria SHOW</title>
+</head>
+<body>
+    <main>
+        <section class="main-wrappertotal"> <!-- empacotador --> 
+            <div class="key-map-wrapper">
+                <h2>Teclado sons</h2>
+                <ul class="key-map-list">
+                    <li>
+                        <kbd class="key-code">E</kbd>
+                        <span class="key-sound">Crash</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">R</kbd>
+                        <span class="key-sound">Ride</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">F</kbd>
+                        <span class="key-sound">Floor tom</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">G</kbd>
+                        <span class="key-sound">Mid tom</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">H</kbd>
+                        <span class="key-sound">High tom</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">V</kbd>
+                        <kbd class="key-code">B</kbd>
+                        <span class="key-sound">Kick</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">J</kbd>
+                        <span class="key-sound">Snare</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">I</kbd>
+                        <span class="key-sound">Hi-Hat Open</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">K</kbd>
+                        <span class="key-sound">Hi-Hat Closed</span>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="main-title">ShowTime<br/> "1, 2, 1, 2, 3..."</h1>
+            <div class="drum-kit-wrapper">
+                <img id="crash-ride" class="crash-cymbal" src = "img/crash.png" alt="Crash cymbal">
+                <img id="hihat-top" class="hihat-top-cymbal" src="img/hihat-top.png" alt="Hi Hat Cymbal">
+          
+                <div data-key="74" class="key snare">
+                  <kbd>J</kbd>
+                </div>
+                <div data-key="66" class="key kick">
+                  <kbd>B</kbd>
+                </div>
+                <div data-key="86" class="key kick2">
+                  <kbd>V</kbd>
+                </div>
+                <div data-key="72" class="key tom-high">
+                  <kbd>H</kbd>
+                </div>
+                <div data-key="71" class="key tom-mid">
+                  <kbd>G</kbd>
+                </div>
+                <div data-key="70" class="key tom-low">
+                  <kbd>F</kbd>
+                </div>
+                <div data-key="69" class="key crash">
+                  <kbd>E</kbd>
+                </div>
+                <div data-key="82" class="key ride">
+                  <kbd>R</kbd>
+                </div>
+                <div data-key="73" class="key hihat-open">
+                  <kbd>I</kbd>
+                </div>
+                <div data-key="75" class="key hihat-close">
+                  <kbd>K</kbd>
+                </div>
+                <img class="drum-kit" src="img/drum-kit.png" alt="Drum Kit">
+            </div>
+        </section>
+    </main>
+    <audio data-key="74" src="sounds/sounds_snare.wav"></audio>
+    <audio data-key="66" src="sounds/sounds_kick.wav"></audio>
+    <audio data-key="86" src="sounds/sounds_2_kick.wav"></audio>
+    <audio data-key="72" src="sounds/sounds_tom-high.wav"></audio>
+    <audio data-key="71" src="sounds/sounds_tom-mid.wav"></audio>
+    <audio data-key="70" src="sounds/sounds_tom-low.wav"></audio>
+    <audio data-key="69" src="sounds/sounds_crash.wav"></audio>
+    <audio data-key="82" src="sounds/sounds_ride.wav"></audio>
+    <audio data-key="73" src="sounds/sounds_hihat-open.wav"></audio>
+    <audio data-key="75" src="sounds/sounds_hihat-close.wav"></audio>
+
+    <script src="drum.js"></script>
+
+    <footer>
+        Criado por Amandita<br/>
+        Créditos do projeto para Feature Code, para saber mais...<br/>
+        <a href="https://www.youtube.com/watch?v=lsRIbW4YCNE">Clique aqui!!</a>
+    </footer>
+</body>
+</html>
